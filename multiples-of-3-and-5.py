@@ -21,9 +21,10 @@ def count_multiples(n):
 	5 * triangular number of floor(1000 / 5)
 	==> 3 * (333 * 334 / 2) + 5 * (199 * 200 / 2)
 	"""
-	threes = (n // 3) - 1      # Should be 333
+	threes = n // 3     # Should be 333
 	fives = (n // 5) - 1 # Should be 199
-	return 3 * (threes * (threes + 1) / 2) + 5 * (fives * (fives + 1) / 2)
+	same  = n // 15
+	return 3 * (threes * (threes + 1) / 2) + 5 * (fives * (fives + 1) / 2) - 15 * (same * (same + 1) /2)
 
 print brute_force(1000)
 print count_multiples(1000)
