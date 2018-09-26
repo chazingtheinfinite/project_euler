@@ -11,3 +11,4 @@ A repository to play around with the Project Euler problems.
 - [x] Multiples of 3 & 5
 - [x] Largest Sum
 - [x] Number Letter Counts
+- [x] Names Score
